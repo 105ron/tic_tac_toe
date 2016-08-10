@@ -6,4 +6,4 @@ def check_rows(game_state)
 
 end
 
-puts game_state [[true,nil,false],[true,nil,false],[true,nil,false]]
+puts check_rows ([[true,nil,false],[true,nil,false],[true,nil,false]])
