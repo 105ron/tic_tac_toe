@@ -12,7 +12,10 @@ module TicTacToe
     private
  
     def default_grid
-      Array.new(3) { Array.new(3) { Cell.new } }
+      #Array.new(3) { Array.new(3) { Cell.new } }
+      "hi"
     end
   end
 end
+board = TicTacToe::Board.new
+puts board
