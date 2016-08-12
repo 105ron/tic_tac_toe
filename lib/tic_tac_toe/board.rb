@@ -11,7 +11,17 @@ module TicTacToe
     def set_cell(x, y, value)
       get_cell(x, y).value = value
     end
+    def game_over
+      return :winner if winner?
+      return :draw if draw?
+      false
+    end
 
+    def formatted_grid
+      grid.each do |row|
+        puts row.map { |cell| cell.value.empty? ? "_" : cell.value }.join(" ")
+      end
+    end
 
     private
  
